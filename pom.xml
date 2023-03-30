@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.2</version>
+		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -20,23 +20,23 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.0</spring-cloud.version>
-		<springdoc-openapi.version>1.5.8</springdoc-openapi.version>
-		<h2.version>1.4.200</h2.version>
-		<lombok.version>1.18.20</lombok.version>
+		<springdoc-openapi.version>1.6.15</springdoc-openapi.version>
+		<h2.version>2.1.214</h2.version>
+		<lombok.version>1.18.26</lombok.version>
 		<database-migration.version>1.0.0.7+b2f00c</database-migration.version>
-		<mssql-jdbc.version>9.2.1.jre11</mssql-jdbc.version>
-		<commons-codec.version>1.12</commons-codec.version>
-		<dapr.version>1.1.0</dapr.version>
-		<commons-cli.version>1.4</commons-cli.version>
-		<junit-jupiter.version>5.7.2</junit-jupiter.version>
+		<mssql-jdbc.version>12.2.0.jre11</mssql-jdbc.version>
+		<commons-codec.version>1.15</commons-codec.version>
+		<dapr.version>1.8.0</dapr.version>
+		<commons-cli.version>1.5.0</commons-cli.version>
+		<junit-jupiter.version>5.9.2</junit-jupiter.version>
 		<jmock.version>2.12.0</jmock.version>
-		<wiremock.version>2.8.0</wiremock.version>
+		<wiremock.version>2.27.2</wiremock.version>
 		<pact-consumer-junit5.version>4.2.6</pact-consumer-junit5.version>
-		<pact-consumer-java8.version>4.1.21</pact-consumer-java8.version>
+		<pact-consumer-java8.version>4.1.40</pact-consumer-java8.version>
 
-		<maven.compiler.version>3.8.1</maven.compiler.version>
-		<maven.surefire.version>2.22.2</maven.surefire.version>
-		<jacoco.maven.version>0.8.7</jacoco.maven.version>
+		<maven.compiler.version>3.11.0</maven.compiler.version>
+		<maven.surefire.version>3.0.0</maven.surefire.version>
+		<jacoco.maven.version>0.8.8</jacoco.maven.version>
 		<coverage.instruction.threshold>0.90</coverage.instruction.threshold>
 		<coverage.class.threshold>0.90</coverage.class.threshold>
 		<coverage.line.threshold>0.90</coverage.line.threshold>
@@ -263,7 +263,7 @@
 			<plugin>
 				<groupId>au.com.dius.pact.provider</groupId>
 				<artifactId>maven</artifactId>
-				<version>4.2.6</version>
+				<version>4.5.4</version>
 				<configuration>
 					<pactDirectory>./theater-service-rest-controller/target/pacts</pactDirectory> <!-- Defaults to ${project.build.directory}/pacts -->
 					<pactBrokerUrl>https://[your_pactflow_domain].pactflow.io/</pactBrokerUrl>
